@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Faggiano Legal | Empresas y emprendedores — Demo</title>
+  <meta
+    name="description"
+    content="Demo de un estudio jurídico para empresas y emprendedores. Especialidades, equipo y un orientador interactivo de consultas."
+  >
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <nav class="navegacion contenedor" aria-label="Navegación principal">
+      <a class="marca" href="#inicio" aria-label="Faggiano Legal, inicio">
+        FAGGIANO<span>LEGAL / EMPRESAS & PERSONAS</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu"
+        hidden
+      >
+        Menú +
+      </button>
+
+      <ul class="menu" id="menu">
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#metodo">Cómo trabajamos</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a class="enlace-contacto" href="#consulta">Hablemos ↗</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="inicio contenedor" id="inicio" aria-labelledby="titulo">
+      <div class="inicio-texto">
+        <p class="etiqueta">ESTRATEGIA JURÍDICA PARA TU NEGOCIO</p>
+
+        <h1 id="titulo">
+          Tu próximo paso.<br>
+          <em>Con respaldo.</em>
+        </h1>
+
+        <p class="introduccion">
+          Decisiones legales claras para emprender, ordenar
+          y hacer crecer tu empresa.
+        </p>
+
+        <div class="acciones">
+          <a class="boton" href="#consulta">Orientar mi consulta ↗</a>
+          <a class="enlace" href="#especialidades">Explorar especialidades</a>
+        </div>
+
+        <p class="nota">Estudio ficticio · Proyecto de portfolio</p>
+      </div>
+
+      <div class="inicio-visual" aria-hidden="true">
+        <div class="visual-superior">
+          <span>F / L</span>
+          <span>VISIÓN A LARGO PLAZO</span>
+        </div>
+
+        <div class="arquitectura">
+          <div class="edificio edificio-uno"></div>
+          <div class="edificio edificio-dos"></div>
+          <div class="edificio edificio-tres"></div>
+        </div>
+
+        <div class="visual-inferior">
+          <span>Una base sólida.<br>Una nueva perspectiva.</span>
+          <span class="flecha-grande">↗</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="franja">
+      <div class="contenedor franja-contenido">
+        <span>Entender el contexto.</span>
+        <span>Ordenar las opciones.</span>
+        <span>Decidir con claridad.</span>
+      </div>
+    </div>
+
+    <section class="seccion contenedor" id="especialidades">
+      <div class="cabecera-seccion">
+        <div>
+          <p class="etiqueta">01 / ESPECIALIDADES</p>
+          <h2>Lo legal, conectado<br>con tu realidad.</h2>
+        </div>
+
+        <p class="texto-apoyo">
+          Cada etapa de un negocio plantea preguntas distintas.
+          Elegí un área para conocer nuestro enfoque.
+        </p>
+      </div>
+
+      <div class="especialidades-layout">
+        <div class="selector-areas" aria-label="Elegir especialidad">
+          <button
+            class="area"
+            type="button"
+            data-area="contratos"
+            aria-pressed="true"
+            aria-controls="detalle-area"
+          >
+            <span class="numero">01</span>
+            <span>Contratos comerciales</span>
+            <span aria-hidden="true">↗</span>
+          </button>
+
+          <button
+            class="area"
+            type="button"
+            data-area="sociedades"
+            aria-pressed="false"
+            aria-controls="detalle-area"
+          >
+            <span class="numero">02</span>
+            <span>Sociedades y emprendimientos</span>
+            <span aria-hidden="true">↗</span>
+          </button>
+
+          <button
+            class="area"
+            type="button"
+            data-area="marcas"
+            aria-pressed="false"
+            aria-controls="detalle-area"
+          >
+            <span class="numero">03</span>
+            <span>Marcas e identidad</span>
+            <span aria-hidden="true">↗</span>
+          </button>
+
+          <button
+            class="area"
+            type="button"
+            data-area="laboral"
+            aria-pressed="false"
+            aria-controls="detalle-area"
+          >
+            <span class="numero">04</span>
+            <span>Relaciones laborales</span>
+            <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+
+        <article
+          class="detalle-area"
+          id="detalle-area"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          <p class="etiqueta" id="area-etiqueta">ACUERDOS CON PERSPECTIVA</p>
+          <h3 id="area-titulo">Reglas claras para relaciones sólidas.</h3>
+
+          <p id="area-descripcion">
+            Acompañamiento en la preparación y revisión de acuerdos,
+            con foco en el funcionamiento de tu negocio.
+          </p>
+
+          <ul class="lista-alcance" id="area-lista">
+            <li>Contratos de servicios y proveedores</li>
+            <li>Acuerdos de confidencialidad</li>
+            <li>Revisión de condiciones comerciales</li>
+          </ul>
+
+          <a class="enlace" href="#consulta">Orientar mi consulta ↗</a>
+        </article>
+      </div>
+
+      <noscript>
+        <p>
+          Activá JavaScript para explorar el detalle de las especialidades
+          y utilizar el orientador.
+        </p>
+      </noscript>
+    </section>
+
+    <section class="metodo seccion" id="metodo">
+      <div class="contenedor">
+        <div class="cabecera-seccion">
+          <div>
+            <p class="etiqueta">02 / NUESTRA FORMA DE TRABAJAR</p>
+            <h2>Primero entender.<br>Después, avanzar.</h2>
+          </div>
+
+          <p class="texto-apoyo">
+            Un proceso claro, desde la primera conversación
+            hasta la definición de los próximos pasos.
+          </p>
+        </div>
+
+        <div class="pasos">
+          <article class="paso">
+            <span class="paso-numero">01 /</span>
+            <h3>Escuchamos</h3>
+            <p>
+              Conocemos tu actividad, el momento de tu negocio
+              y la situación que necesitás abordar.
+            </p>
+          </article>
+
+          <article class="paso">
+            <span class="paso-numero">02 /</span>
+            <h3>Definimos el alcance</h3>
+            <p>
+              Planteamos una propuesta de trabajo con objetivos,
+              tareas y honorarios acordados de antemano.
+            </p>
+          </article>
+
+          <article class="paso">
+            <span class="paso-numero">03 /</span>
+            <h3>Te acompañamos</h3>
+            <p>
+              Trabajamos sobre lo acordado y mantenemos una
+              comunicación clara durante el proceso.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion contenedor" id="equipo">
+      <div class="cabecera-seccion">
+        <div>
+          <p class="etiqueta">03 / EL EQUIPO</p>
+          <h2>El derecho tiene<br>un lado humano.</h2>
+        </div>
+
+        <p class="texto-apoyo">
+          Presentación ilustrativa del equipo.
+          Los nombres y roles de esta demo son ficticios.
+        </p>
+      </div>
+
+      <div class="equipo-grid">
+        <article class="persona">
+          <div class="persona-visual tono-uno" aria-hidden="true">
+            <span>MF</span>
+            <small>FAGGIANO LEGAL</small>
+          </div>
+          <p class="etiqueta">DIRECCIÓN / SOCIEDADES</p>
+          <h3>Martina Faggiano</h3>
+          <p>Enfoque en organización societaria y acompañamiento a emprendimientos.</p>
+        </article>
+
+        <article class="persona">
+          <div class="persona-visual tono-dos" aria-hidden="true">
+            <span>TL</span>
+            <small>FAGGIANO LEGAL</small>
+          </div>
+          <p class="etiqueta">CONTRATOS / NEGOCIOS</p>
+          <h3>Tomás Leiva</h3>
+          <p>Enfoque en acuerdos comerciales y relaciones entre empresas.</p>
+        </article>
+
+        <article class="persona">
+          <div class="persona-visual tono-tres" aria-hidden="true">
+            <span>VC</span>
+            <small>FAGGIANO LEGAL</small>
+          </div>
+          <p class="etiqueta">LABORAL / ORGANIZACIONES</p>
+          <h3>Victoria Costa</h3>
+          <p>Enfoque en consultas laborales y organización de equipos de trabajo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="preguntas seccion">
+      <div class="contenedor preguntas-layout">
+        <div>
+          <p class="etiqueta">ANTES DE CONVERSAR</p>
+          <h2>Algunas preguntas.<br>Un punto de partida.</h2>
+          <p class="texto-apoyo">
+            Información general sobre cómo sería la atención del estudio.
+          </p>
+        </div>
+
+        <div class="preguntas-lista">
+          <details>
+            <summary>Emprendimientos · ¿Puedo consultar antes de empezar?</summary>
+            <p>
+              La propuesta contempla una conversación inicial para entender
+              el proyecto y definir qué cuestiones necesitan revisión.
+            </p>
+          </details>
+
+          <details>
+            <summary>Contratos · ¿Se puede revisar un acuerdo existente?</summary>
+            <p>
+              El servicio propuesto incluye la revisión de acuerdos.
+              El alcance se define según el documento y el contexto.
+            </p>
+          </details>
+
+          <details>
+            <summary>Empresas · ¿Hay acompañamiento continuo?</summary>
+            <p>
+              La propuesta contempla tanto consultas puntuales como
+              acompañamiento periódico, según las necesidades del negocio.
+            </p>
+          </details>
+
+          <details>
+            <summary>Honorarios · ¿Cómo se define el presupuesto?</summary>
+            <p>
+              Después de conocer la consulta, se presenta un alcance
+              y una propuesta de honorarios antes de iniciar el trabajo.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion contenedor" id="consulta">
+      <div class="consulta-layout">
+        <div class="consulta-intro">
+          <p class="etiqueta">04 / CONVERSEMOS</p>
+          <h2>Cada próximo paso<br>empieza con<br><em>una pregunta.</em></h2>
+
+          <p>
+            Seleccioná el motivo de tu consulta y conocé
+            qué área podría acompañarte.
+          </p>
+
+          <p class="nota">
+            Demo interactiva. Podés probar el contacto por WhatsApp
+con el desarrollador. No ofrece asesoramiento legal.
+          </p>
+        </div>
+
+        <div class="orientador">
+          <form id="form-consulta">
+            <p class="etiqueta">ORIENTADOR DE CONSULTAS</p>
+
+            <fieldset>
+              <legend>¿En qué podemos acompañarte?</legend>
+
+              <label class="opcion">
+                <input type="radio" name="motivo" value="emprender" required>
+                <span>Estoy por emprender</span>
+              </label>
+
+              <label class="opcion">
+                <input type="radio" name="motivo" value="empresa">
+                <span>Tengo una empresa</span>
+              </label>
+
+              <label class="opcion">
+                <input type="radio" name="motivo" value="contrato">
+                <span>Necesito revisar un contrato</span>
+              </label>
+
+              <label class="opcion">
+                <input type="radio" name="motivo" value="marca">
+                <span>Quiero consultar por una marca</span>
+              </label>
+
+              <label class="opcion">
+                <input type="radio" name="motivo" value="laboral">
+                <span>Tengo una consulta laboral empresarial</span>
+              </label>
+            </fieldset>
+
+            <button class="boton" type="submit">Ver orientación ↗</button>
+          </form>
+
+          <div id="resultado" hidden>
+            <p class="etiqueta">TU PUNTO DE PARTIDA</p>
+            <h3 id="resultado-titulo" tabindex="-1"></h3>
+            <p id="resultado-texto"></p>
+
+            <div class="vista-previa">
+              <p class="etiqueta">VISTA PREVIA DEL MENSAJE</p>
+              <p id="resultado-mensaje"></p>
+            </div>
+
+            <a
+  class="boton"
+  id="enviar-whatsapp"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Probar contacto por WhatsApp ↗
+</a>
+
+<p class="nota">
+  Se abrirá WhatsApp con un mensaje de prueba para el desarrollador
+  de esta web. Podrás revisarlo antes de enviarlo.
+  El estudio es ficticio y no brinda atención legal.
+</p>
+
+            <button class="enlace boton-volver" id="volver" type="button">
+              ← Elegir otro motivo
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie-contenido">
+      <a class="marca" href="#inicio">
+        FAGGIANO<span>LEGAL / EMPRESAS & PERSONAS</span>
+      </a>
+
+      <p>Proyecto de portfolio · Estudio y equipo ficticios.</p>
+      <a class="enlace" href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
