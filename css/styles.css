@@ -887,11 +887,19 @@ legend {
     min-height: 290px;
   }
 
-  .franja-contenido {
-    flex-direction: column;
-    gap: 12px;
-    padding-block: 20px;
-  }
+.franja-contenido {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding-block: 20px;
+  text-align: center;
+}
+
+.franja-contenido span {
+  min-width: 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
 
   .cabecera-seccion {
     flex-direction: column;
