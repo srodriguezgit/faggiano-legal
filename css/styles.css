@@ -1045,3 +1045,66 @@ legend {
     line-height: 1.6;
   }
 }
+
+/* Interacción de preguntas y orientador */
+
+.preguntas-lista summary,
+.orientador .opcion,
+.orientador .opcion * {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Espacio interior del resaltado */
+.preguntas-lista summary {
+  padding-inline: 16px;
+}
+
+.preguntas-lista details > p {
+  padding-inline: 16px;
+}
+
+/* Transiciones suaves */
+@media (prefers-reduced-motion: no-preference) {
+  .preguntas-lista summary,
+  .orientador .opcion {
+    transition:
+      background-color 180ms ease,
+      color 180ms ease,
+      border-color 180ms ease;
+  }
+}
+
+/* Computadora: al pasar el cursor */
+@media (hover: hover) {
+  .preguntas-lista summary:hover,
+  .orientador .opcion:hover {
+    background-color: #f2e3e6;
+    color: var(--bordo);
+  }
+
+  .orientador .opcion:hover {
+    border-color: #b78c96;
+  }
+}
+
+/* Al tocar o navegar con teclado */
+.preguntas-lista summary:active,
+.preguntas-lista summary:focus-visible,
+.orientador .opcion:active,
+.orientador .opcion:focus-within {
+  background-color: #f2e3e6;
+  color: var(--bordo);
+}
+
+/* La pregunta abierta conserva el resaltado */
+.preguntas-lista details[open] summary {
+  background-color: #f2e3e6;
+  color: var(--bordo);
+}
+
+/* La opción elegida queda más marcada */
+.orientador .opcion:has(input:checked) {
+  background-color: #ead4da;
+  border-color: var(--bordo);
+  color: var(--bordo);
+}
